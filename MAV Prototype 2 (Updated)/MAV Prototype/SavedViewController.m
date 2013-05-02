@@ -19,7 +19,8 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        self.title = NSLocalizedString(@"Saved Vacas", @"Saved Vacas");
+        self.tabBarItem.image = [UIImage imageNamed:@"list.png"];
     }
     return self;
 }
@@ -34,6 +35,7 @@
 //Populate list
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
     static NSString *simpleTableIdentifier = @"SimpleTableItem";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
@@ -45,19 +47,6 @@
     return cell;
 }
 
--(IBAction)onCreate:(id)sender
-{
-    VacaViewController *vacaView = [[VacaViewController alloc] initWithNibName:@"VacaViewController" bundle:nil];
-    
-    if (vacaView != nil)
-    {
-        [self presentViewController:vacaView animated:true completion:nil];
-    }
-}
--(IBAction)onHome:(id)sender
-{
-    [self dismissViewControllerAnimated:true completion:nil];
-}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -70,6 +59,9 @@
              @"Disney Land",
              @"Miami Beach",
              @"Wilmington Beach",nil];
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Saved Vacas" message:@"Your saved vacas will go here. You will be able to edit and delete saved vacas." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+    [alert show];
 }
 
 - (void)didReceiveMemoryWarning

@@ -20,12 +20,10 @@
     IBOutlet UIButton *from;
     IBOutlet UIButton *to;
     IBOutlet UIButton *selectDate;
-    NSArray *dontLeave;
-    IBOutlet UIBarButtonItem *goDate;
-
+    UIDatePicker *dobPicker;
+    
 }
 -(IBAction)onTo:(id)sender;
--(IBAction)onDismiss:(id)sender;
 -(IBAction)onFrom:(id)sender;
 -(IBAction)onDate:(id)sender;
 -(IBAction)onSave:(id)sender;

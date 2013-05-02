@@ -13,6 +13,10 @@
 #import "SecondViewController.h"
 
 #import "ThirdViewController.h"
+
+#import "VacaViewController.h"
+
+#import "SavedViewController.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -20,13 +24,14 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
-    
     UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
     UIViewController *viewController3 = [[ThirdViewController alloc] initWithNibName:@"ThirdViewController" bundle:nil];
+    UIViewController *viewController4 = [[VacaViewController alloc] initWithNibName:@"VacaViewController" bundle:nil];
+    UIViewController *viewController5 = [[SavedViewController alloc] initWithNibName:@"SavedViewController" bundle:nil];
     
     
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[viewController1, viewController2, viewController3];
+    self.tabBarController.viewControllers = @[viewController1, viewController4, viewController5, viewController3, viewController2];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

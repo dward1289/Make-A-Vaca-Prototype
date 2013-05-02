@@ -10,10 +10,7 @@
 
 @interface SavedViewController : UIViewController
 {
-    IBOutlet UIBarButtonItem *goHome;
-    IBOutlet UIBarButtonItem *goCreate;
     NSArray *saved;
 }
--(IBAction)onCreate:(id)sender;
--(IBAction)onHome:(id)sender;
+
 @end

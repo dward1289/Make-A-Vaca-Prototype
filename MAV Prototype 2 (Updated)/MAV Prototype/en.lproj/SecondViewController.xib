@@ -198,7 +198,6 @@
 				</array>
 				<string key="NSFrame">{{0, 20}, {320, 411}}</string>
 				<reference key="NSSuperview"/>
-				<reference key="NSNextKeyView"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">1</int>
 					<bytes key="NSRGB">MC4yMzcxODQ1MzI1IDAuODE5OTAxOTM4MSAwLjkxNjEzNTIwNDEAA</bytes>

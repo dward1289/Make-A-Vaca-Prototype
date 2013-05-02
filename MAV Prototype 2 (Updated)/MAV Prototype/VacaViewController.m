@@ -14,12 +14,12 @@
 @end
 
 @implementation VacaViewController
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        self.title = NSLocalizedString(@"New Vaca", @"New Vaca");
+        self.tabBarItem.image = [UIImage imageNamed:@"plu.png"];
     }
     return self;
 }
@@ -28,12 +28,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    dontLeave = [[NSArray alloc] initWithObjects:
-                 @"Hotel Reservations",
-                 @"Car Rental",
-                 @"Directions",
-                 @"Activity List",nil];
-    
+
 }
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
@@ -48,10 +43,10 @@
     fromDay.hidden = false;
     to.hidden = false;
     toDay.hidden = false;
-    goDate.enabled = true;
 }
 -(IBAction)onTo:(id)sender
 {
+    
     dateDate =  datePicker.date;
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat: @"MMMM dd, yyyy"];
@@ -72,33 +67,8 @@
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Saved" message:@"Your vaca has been saved." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
     [alert show];
     
-    [self dismissViewControllerAnimated:true completion:nil];
+    [self.tabBarController setSelectedIndex:0];
     
-}
-
--(IBAction)onDismiss:(id)sender
-{
-    datePicker.hidden = true;
-}
-
-//Count items in list
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return [dontLeave count];
-}
-
-//Populate list
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *simpleTableIdentifier = @"SimpleTableItem";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-    
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
-    }
-    cell.textLabel.text = [dontLeave objectAtIndex:indexPath.row];
-    return cell;
 }
 
 

@@ -32,6 +32,11 @@
 		F455474517221773005E94C1 /* MGLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F455474417221773005E94C1 /* MGLogo.png */; };
 		F455474917221DBD005E94C1 /* SavedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F455474717221DBC005E94C1 /* SavedViewController.m */; };
 		F455474A17221DBD005E94C1 /* SavedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F455474817221DBD005E94C1 /* SavedViewController.xib */; };
+		F45CF3A717322251006078E8 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = F45CF3A617322251006078E8 /* info.png */; };
+		F4FAFF4117322608002D107D /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = F4FAFF3E17322608002D107D /* gear.png */; };
+		F4FAFF4217322608002D107D /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = F4FAFF3F17322608002D107D /* home.png */; };
+		F4FAFF4317322608002D107D /* plu.png in Resources */ = {isa = PBXBuildFile; fileRef = F4FAFF4017322608002D107D /* plu.png */; };
+		F4FAFF491732277B002D107D /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = F4FAFF481732277B002D107D /* list.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +74,11 @@
 		F455474617221DBC005E94C1 /* SavedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavedViewController.h; sourceTree = "<group>"; };
 		F455474717221DBC005E94C1 /* SavedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavedViewController.m; sourceTree = "<group>"; };
 		F455474817221DBD005E94C1 /* SavedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SavedViewController.xib; sourceTree = "<group>"; };
+		F45CF3A617322251006078E8 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		F4FAFF3E17322608002D107D /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
+		F4FAFF3F17322608002D107D /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		F4FAFF4017322608002D107D /* plu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plu.png; sourceTree = "<group>"; };
+		F4FAFF481732277B002D107D /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +126,11 @@
 			isa = PBXGroup;
 			children = (
 				F455473D1721E55E005E94C1 /* HomeViewController_Image_1.png */,
+				F45CF3A617322251006078E8 /* info.png */,
+				F4FAFF3E17322608002D107D /* gear.png */,
+				F4FAFF481732277B002D107D /* list.png */,
+				F4FAFF3F17322608002D107D /* home.png */,
+				F4FAFF4017322608002D107D /* plu.png */,
 				F455474417221773005E94C1 /* MGLogo.png */,
 				F45547161721E1F6005E94C1 /* AppDelegate.h */,
 				F45547171721E1F6005E94C1 /* AppDelegate.m */,
@@ -223,6 +238,11 @@
 				F45547431721EDBA005E94C1 /* VacaViewController.xib in Resources */,
 				F455474517221773005E94C1 /* MGLogo.png in Resources */,
 				F455474A17221DBD005E94C1 /* SavedViewController.xib in Resources */,
+				F45CF3A717322251006078E8 /* info.png in Resources */,
+				F4FAFF4117322608002D107D /* gear.png in Resources */,
+				F4FAFF4217322608002D107D /* home.png in Resources */,
+				F4FAFF4317322608002D107D /* plu.png in Resources */,
+				F4FAFF491732277B002D107D /* list.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +390,7 @@
 				F45547371721E1F7005E94C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
